@@ -53,8 +53,7 @@ void heapSort(int arr[], int n)
 void printArray(int arr[], int n)
 {
   for (int i = 0; i < n; ++i)
-    cout << arr[i] << " ";
-  cout << "\n";
+    cout << arr[i] << endl;
 }
 
 int main(){
@@ -63,7 +62,9 @@ int main(){
 
   cin >> t;
 
-  while(t--)
+  int answers[t];
+
+  for(int k=0; k < t; k++)
   {
     cin >> n;
     int a[n];
@@ -76,13 +77,14 @@ int main(){
 
     if(a[n-1]%2 == 0)
     {
-      p = a[n-1] + 2;
+      answers[k] = a[n-1] + 2;
     }
     else
     {
-      p = a[n-1] + 1;
+      answers[k] = a[n-1] + 1;
     }
-
-    cout << p << endl;
   }
+
+  printArray(answers, t);
+
 }
