@@ -57,7 +57,7 @@ void printArray(int arr[], int n)
 }
 
 int main(){
-  int t,n,p;
+  int t,n;
   string line;
 
   cin >> t;
